@@ -1,0 +1,26 @@
+{
+  "name": "win-ze-yes",
+  "version": "0.0.1",
+  "description": "Assertion library to win the yes against the no",
+  "main": "src/win.js",
+  "scripts": {
+    "test": "mocha ./specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattjmattj/win-ze-yes.js.git"
+  },
+  "keywords": [
+    "assertion",
+    "test",
+    "win",
+    "yes",
+    "no"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattjmattj/win-ze-yes.js/issues"
+  },
+  "homepage": "https://github.com/mattjmattj/win-ze-yes.js"
+}
