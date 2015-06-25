@@ -17,10 +17,23 @@ describe ('win', function() {
 	});
 	
 	it('needs NOT the no to win against the yes when true', function() {
-		var error = null;
 		win(function(){
+			var error = null;
+			
 			try {
 				win(function(){ return true; }).needs.the.no.to.win;
+			} catch(e) {
+				error = e;
+			}
+			
+			return error != null;
+			
+		}).needs.the.yes.to.win;
+		
+		win(function(){
+			var error = null;
+			
+			try {
 				win(true).needs.the.no.to.win;
 			} catch(e) {
 				error = e;
@@ -32,10 +45,23 @@ describe ('win', function() {
 	});
 	
 	it('needs NOT the yes to win against the no when false', function() {
-		var error = null;
 		win(function(){
+			var error = null;
+			
 			try {
 				win(function(){ return false; }).needs.the.yes.to.win;
+			} catch(e) {
+				error = e;
+			}
+			
+			return error != null;
+			
+		}).needs.the.yes.to.win;
+		
+		win(function(){
+			var error = null;
+			
+			try {
 				win(false).needs.the.yes.to.win;
 			} catch(e) {
 				error = e;
