@@ -6,6 +6,10 @@ describe ('win', function() {
 		win(true).needs.the.yes.to.win;
 	});
 	
+	it('needs the yes to win again ze now', function() {
+		win(true).needs.the.yes.to.win.again.ze.now;
+	});
+	
 	it('needs the yes to win against the no when true', function() {
 		win(function(){ return true; }).needs.the.yes.to.win.against.the.no;
 		win(true).needs.the.yes.to.win.against.the.no;
