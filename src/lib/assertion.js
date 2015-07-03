@@ -21,6 +21,12 @@ Assertion.prototype = {
 		return this;
 	},
 	
+	get now() {
+		this.message += ' now';
+		this.positive = false;
+		return this;
+	},
+	
 	get win() {
 		this.message += ' win';
 		
@@ -35,7 +41,7 @@ Assertion.prototype = {
 	}
 };
 
-var keywords = ['needs','the','ze','to','against'];
+var keywords = ['needs','the','ze','to','against','again'];
 keywords.forEach(function(word) {
 	Object.defineProperty(Assertion.prototype, word, {
 		get: function() {
